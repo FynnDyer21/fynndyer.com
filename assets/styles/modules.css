@@ -1,0 +1,440 @@
+.modules {
+    max-width: 100%;
+    margin: 0 auto;
+    color: black;
+}
+
+/* #region spacer */
+.modules .spacer{ 
+    display:block;
+    margin:0;
+    padding:0;
+}
+/* #endregion */
+
+/* #region header */
+.modules .header a{
+	text-decoration: none;
+	color: black;
+}
+.modules .header .topnav a{
+	display: inline-block;
+    text-align: center;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.modules .header .topnav{
+	margin-top:2px;
+    overflow: hidden;
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:20px;
+}
+.modules .header .topnav a:hover, .modules .header .navmodal a:hover {
+    opacity:70%;
+
+}
+.modules .header h1{
+    padding-top:10px;
+    line-height: 10px;
+}
+
+.modules .header .topnav a.active, .modules .header .navmodal a.active {
+    color: #7F0000;
+}
+.modules .header .navmodal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.897);
+}
+.modules .header .navmodal-content {
+    font-size:30px;
+    line-height:50px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/* The Close Button */
+.modules .header .close {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.modules .header .close:hover, .modules .header .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modules .header .topnav .menu {
+    display: none;
+    margin: 0 auto;
+}	
+.modules .header .topnav .menu:hover{
+    opacity:70%;
+    cursor:pointer;
+}
+/* When the screen is less than 600 pixels wide, hide all links, Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .modules .header .topnav a{
+        display: none;
+    }
+    .modules .header .topnav .menu {
+        display: block;
+    }
+}
+/* #endregion */
+
+/* #region imgtxt */
+.modules .imgtxt{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-width: 1100px;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imgtxt .imag{
+    display:flex;
+    
+}
+.imgtxt img{
+    box-sizing: border-box;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+.imgtxt .txt{
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display:block;
+    padding:10px;
+    text-align:left;
+    line-height: 20px;
+}
+.imgtxt .txt a{
+    color:black;
+}
+.imgtxt .txt a:hover{
+    opacity: 0.8;
+}
+
+/* #endregion */
+
+/* #region footer */
+.footer .icon:hover{
+    opacity: 0.4;
+}
+.footer img{
+    width: 50px;
+}
+/* #endregion */
+
+/* #region techstack */
+.techstack img{
+    width:50px;
+    margin-right:7px;
+}
+.techstack{
+    max-width:1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:1%;
+    line-height: 1.4;
+    text-align:left;
+}
+/* #endregion */
+
+/* #region title */
+.modules .title{
+    max-width: 1100px;
+    text-align: center;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:1%;
+    
+}
+/* #endregion */
+
+/* #region description */
+.modules .description{
+    max-width:1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:1%;
+    line-height: 1.4;
+}
+/* #endregion */
+
+/* #region wideimage */
+.modules .image{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+.modules .image img{
+    width:100%;
+    display:block;
+    margin: 0 auto;
+    /*max width in px i think*/
+}
+.modules .image a{
+    color: inherit;
+    text-decoration:underline;
+}
+/* #endregion */
+
+/* #region photogrid */
+.modules .photogrid{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    display: flex;
+}
+.modules .photogrid img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.modules .photogrid > div:not(:last-child) {
+    margin-right: 1%;
+}
+/* #endregion */
+
+/* #region responsive gallery */
+.modules .wrapper {
+    max-width: 1400px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+.modules .image-row {
+	display: flex;
+}
+.modules .image-row > div:not(:last-child) {
+    
+}
+.modules .zoomer{	
+	transition: transform .2s ease-in-out;
+	overflow: hidden;
+    margin:3px;
+}
+
+.modules .zoomer img{
+	transition: transform .4s ease-in-out;
+	cursor: pointer;
+}
+.modules .zoomer:hover{
+    transform: scale(1.03);
+}
+/* #endregion */
+
+/* #region lightbox */
+/* The Modal (background) */
+.modules .modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.87);
+}
+/* Modal Content */
+.modules .modal-content {
+	margin: 0;
+ 	position: absolute;
+ 	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+/* Hide the slides by default */
+.modules .mySlides {
+	display: none;
+	
+}
+.modules .mySlides img{
+	display: block;
+	margin: 0 auto;
+	max-width:90vw;
+    max-height:88vh;
+	animation:opac 0.5s}@keyframes opac{from{opacity:0} to{opacity:1};
+}
+.modules .overlay {
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom:23px;
+	cursor: pointer;
+}
+/* Next & previous buttons */
+.modules .prev,.modules .next {
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	user-select: none;
+	-webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.modules .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+    text-decoration:none;
+}
+/* Position the "prev button" to the left */
+.modules .prev {
+	left: 0;
+	border-radius: 3px 0 0 3px;
+    text-decoration:none;
+}
+.modules .nav{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+/*click areas */
+.modules .nav.left{		
+	float:left;	
+	left: 0;
+	right: 50%;
+	opacity: 0;
+}
+.modules .nav.right{
+	float:right;
+	left: 50%;
+	right: 0;
+	opacity: 0;
+}
+.modules .nav:hover{
+	opacity:100;
+}
+
+/* The Close Button */
+.modules .close {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.modules .close:hover, .modules .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* captions */
+.modules .caption{
+    color: rgba(255, 255, 255, 0.87);
+    font-style: normal;
+    font-family: NotFont;
+	margin-top:5px;
+}
+.modules .caption a{
+	color: rgba(189, 189, 189, 0.87);
+    text-decoration:none;
+}
+.modules .caption a:hover{
+	opacity:0.8;
+}
+
+/* #endregion */
+
+/* #region embed */
+.modules .embed{
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    max-width:1100px;
+}
+.modules .video-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+}
+.modules .video-container iframe,.modules .video-container object,.modules .video-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+/* #endregion */
+
+/* #region container */
+.modules .container figure a{
+    color:black;
+    text-decoration:none;
+}
+.modules .container {
+    display: flex;
+    flex-wrap: wrap;	  
+    justify-content: space-between;
+}
+.modules .container figure {
+    margin:15px;
+    width:31%;
+    height:31%;
+    flex: 1 0 auto;
+    /*^^this line is fuckin epic*/
+}
+.modules .container caption{
+    font-size:17px;
+    padding: 3px;
+    text-align: center;
+}
+.modules .container figure img {
+    border-radius:40px;
+    width: 100%;
+    height: 100%;
+}
+.modules .container figure:hover{
+    opacity:0.9;
+}
+
+/* When the screen is less than 600 pixels wide, flex to center */
+@media screen and (max-width: 600px) {
+    .modules .container{
+        justify-content:center;
+    }
+    .modules .container figure{
+        width:95%;
+        min-width:0px;
+        min-height:0px;
+    }
+}
+/*#endregion*/
