@@ -6,17 +6,17 @@
     top: 20px;
     left:20px;
     text-align:left;
-    line-height:1.4em;
+    line-height:1.6em;
 }
 
 .sidemenu a{
-    color:black;
+    color:#FF952B;
     text-decoration:none;
     font-size:16px;
     padding-bottom:6px;
 }
 .sidemenu a:hover{
-    color: #999;
+    color: #FFB366;
 }
 
 /*mobilemenu*/
@@ -30,19 +30,20 @@
 }
 .mobilemenu a{
     text-decoration:none;
-    color:black;
+    color:#FF952B;
     margin: 0 auto;
 }
 .mobilemenu a:hover{
     text-decoration:none;
-    color: #999;
+    color: #FFB366;
 }
 .mobilemenu span{
     text-decoration: none;
+    color:#FF952B;
     cursor: pointer;
 }
 .mobilemenu span:hover{
-    color: #999;
+    color: #FFB366;
 }
 
 /*modal*/
@@ -70,7 +71,7 @@
     line-height:3em
 }
 .mobilemenu .navmodal .close {
-    color: rgb(0, 0, 0);
+    color: #FF952B;
     position: absolute;
     top: 10px;
     right: 25px;
@@ -78,13 +79,13 @@
     font-weight: bold;
 }
 .mobilemenu .navmodal .close:hover, .mobilemenu .navmodal .close:focus {
-    color: #999;
+    color: #FFB366;
     text-decoration: none;
     cursor: pointer;
 }
 
 a.active{
-    color:rgb(99, 99, 99);
+    color:#FF6E37;
 }
 
 /* When the screen is less than 600 pixels wide, hide sidemenu and show mobilemenu */

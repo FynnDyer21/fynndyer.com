@@ -2,7 +2,6 @@
     max-width: 100%;
     margin: 0 auto;
     color: black;
-
 }
 
 /* #region spacer */
@@ -180,10 +179,27 @@
 /* #region description */
 .modules .description{
     max-width:1100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:1%;
     line-height: 1.4;
+    margin-left:auto;
+    margin-right:auto;
+    padding:5px;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 65px solid transparent;
+}
+/* When the screen is less than 1400 pixels wide, get rid of right margin */
+@media screen and (max-width: 1400px) {
+    .modules .description {
+        border-right: 20px solid transparent; 
+    }
+}
+/* When the screen is less than 600 pixels wide, get rid of margin */
+@media screen and (max-width: 600px) {
+    .modules .description {
+        border-top:30px;
+        border-left: 0px solid transparent;
+        border-right: 0px solid transparent; 
+    }
 }
 /* #endregion */
 
@@ -226,11 +242,11 @@
 
 /* #region responsive gallery */
 .modules .wrapper {
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     border-left: 200px solid transparent;
     border-right: 200px solid transparent;
-    max-width: 1100px;
     border-top: 10px solid transparent;
 
     
