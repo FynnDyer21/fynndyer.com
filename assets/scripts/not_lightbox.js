@@ -4,7 +4,7 @@
 function notLightbox(lightboxData){
     var text ='<span class=\'close cursor\' onclick=\'closeModal()\'>&times;<\/span><div id=\'modal-content\' class=\'modal-content\'>';
 
-    for(var i=1;i<lightboxData.length;i++){
+    for(var i=0;i<lightboxData.length;i++){
         text+='<div class=\'mySlides\'>'
         text+='<img src=\'images/'+lightboxData[i].image+'\' \/>'
         text+='<div class=\'overlay\'>'
