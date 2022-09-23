@@ -1,0 +1,98 @@
+
+
+/*sidemenu*/
+.sidemenu{
+    position:fixed;
+    top: 20px;
+    left:20px;
+    text-align:left;
+    line-height:1.4em;
+}
+
+.sidemenu a{
+    color:black;
+    text-decoration:none;
+    font-size:16px;
+    padding-bottom:6px;
+}
+.sidemenu a:hover{
+    color: #999;
+}
+
+/*mobilemenu*/
+.mobilemenu{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left:5px;
+    margin-right:5px;
+    display:none;
+    text-align:left;
+}
+.mobilemenu a{
+    text-decoration:none;
+    color:black;
+    margin: 0 auto;
+}
+.mobilemenu a:hover{
+    text-decoration:none;
+    color: #999;
+}
+.mobilemenu span{
+    text-decoration: none;
+    cursor: pointer;
+}
+.mobilemenu span:hover{
+    color: #999;
+}
+
+/*modal*/
+.mobilemenu .navmodal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.897);
+}
+.mobilemenu .navmodal-content{
+    font-size:30px;
+    line-height:50px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width:100%;
+    text-align:center;
+    line-height:3em
+}
+.mobilemenu .navmodal .close {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.mobilemenu .navmodal .close:hover, .mobilemenu .navmodal .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.active{
+    color:rgb(99, 99, 99);
+}
+
+/* When the screen is less than 600 pixels wide, hide sidemenu and show mobilemenu */
+@media screen and (max-width: 600px) {
+    .sidemenu{
+        display:none;
+    }
+    .mobilemenu{
+        display:block;
+    }
+}

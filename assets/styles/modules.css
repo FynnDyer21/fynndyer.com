@@ -2,6 +2,7 @@
     max-width: 100%;
     margin: 0 auto;
     color: black;
+
 }
 
 /* #region spacer */
@@ -225,10 +226,27 @@
 
 /* #region responsive gallery */
 .modules .wrapper {
-    max-width: 1400px;
-	margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
-    margin-top: 1%;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    max-width: 1100px;
+    border-top: 10px solid transparent;
+
+    
+}
+/* When the screen is less than 1400 pixels wide, get rid of right margin */
+@media screen and (max-width: 1400px) {
+    .modules .wrapper {
+        border-right: 20px solid transparent; 
+    }
+}
+/* When the screen is less than 600 pixels wide, get rid of margin */
+@media screen and (max-width: 600px) {
+    .modules .wrapper {
+        border-left: 0px solid transparent;
+        border-right: 0px solid transparent; 
+    }
 }
 .modules .image-row {
 	display: flex;

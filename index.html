@@ -9,6 +9,7 @@
 
 	<link rel='stylesheet' type='text/css' href='/assets/styles/site.css'>
 	<link rel='stylesheet' type='text/css' href='/assets/styles/modules.css'>
+	<link rel='stylesheet' type='text/css' href='/assets/styles/navmenus.css'>
 	<script src='/assets/scripts/fade.js'></script>
 	<script src='/assets/scripts/not_lightbox.js'></script>
 	<script src='/assets/scripts/not_photogrid.js'></script>
@@ -20,8 +21,41 @@
 	<svg id='fader'></svg>
 	<script>fadeInPage();</script>
 	
+	<div class='navmenus' active ='walkingmenorca'>
+
+		<div class='sidemenu'>
+			<a href="/" style="font-size:30px; padding-bottom:24px;">Fynn Dyer</a>
+			<br><br>
+			<a href="/" class="active">walking menorca</a>
+			<br>
+			<!--<a href="/bio">bio</a>-->
+		</div>
+
+		<div class='mobilemenu'>
+
+			<div>
+				<a href="/">Fynn Dyer</a>
+				<span style="float:right;" onclick="openNavModal()">
+					menu 
+				</span>
+			</div>
+
+			<div class="navmodal" id="myNavModal">
+				<span class="close cursor" onclick="closeNavModal()">x</span>
+				<div class="navmodal-content">
+					<a href="/" class="active">walking menorca</a>
+					<br>
+					<!--<a href="/bio">bio</a>-->
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
 	<div class='modules' id='home'></div>
 
+	<script src='/assets/scripts/sidemenu.js'></script>
 	<script src='/assets/data.js'></script>
 	<script src='/assets/scripts/loadmodules.js'></script>
 </body>

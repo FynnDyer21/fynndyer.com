@@ -46,17 +46,7 @@ var home = [
                 y: '3'
             },
             {
-                image: 'DSCF8290.jpg',
-                x: '2',
-                y: '3'
-            },
-            {
                 image: 'DSCF8313.jpg',
-                x: '2',
-                y: '3'
-            },
-            {
-                image: 'DSCF8316.jpg',
                 x: '2',
                 y: '3'
             },
