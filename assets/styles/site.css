@@ -17,8 +17,7 @@ body {
     height: 100%;
     z-index: 999999;
     pointer-events: none;
-    background: rgb(255,246,230);
-    background: linear-gradient(83deg, rgba(255,246,230,1) 0%, rgba(255,247,235,1) 25%, rgba(255,251,245,1) 50%, rgba(255,247,235,1) 75%, rgba(255,246,230,1) 100%);
+    background: rgb(255, 255, 255);
     animation-duration: 300ms;
     animation-timing-function: ease-in-out;
 }
