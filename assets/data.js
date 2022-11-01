@@ -237,7 +237,7 @@ var uk = [
 var bio = [
     {
         module:"description",
-        text:"There is nothing sweeter in life than Cinestill. <br>Hey I'm Fynn, a 16 year old film photographer from the UK. <br>This website acts as a gallery for all of my favorite photos I have taken across Europe.",
+        text:"35mm Scans. <br>Wassup. <br>This website acts as a gallery for all of my favorite photos I have taken across Europe. Enjoy.",
         inline:"style=\'text-align:left\'"
     },
     {
