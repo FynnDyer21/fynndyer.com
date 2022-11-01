@@ -1,11 +1,11 @@
-@font-face { font-family: cooperblack; src: url('/assets/cooperblack.ttf'); }
+@font-face { font-family: cooperblack; src: url('/assets/fonts/Century-BookCondensed.otf'); }
 
 html{
     min-height: 100%;
 }
 
 body {
-    background: #E4F6F8;
+    background: #ffffff;
     text-align: center;
     font-family: cooperblack;
 }
