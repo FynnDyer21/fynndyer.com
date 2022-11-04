@@ -237,7 +237,7 @@ var uk = [
 var bio = [
     {
         module:"description",
-        text:"35mm Scans. <br>Wassup. <br>This website acts as a gallery for all of my favorite photos I have taken across Europe. Enjoy.<br>Thanks to CineStill for the good stuff",
+        text:"35mm Scans. <br>Wassup. <br>This website acts as a gallery for all of my favorite photos I have taken across Europe. Enjoy.<br>Thanks to CineStill for the good stuff :)",
         inline:"style=\'text-align:left\'"
     },
     {
